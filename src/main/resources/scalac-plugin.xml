@@ -1,0 +1,4 @@
+<plugin>
+    <name>named-argument</name>
+    <classname>givers.scala.namedargument.Plugin</classname>
+</plugin>
