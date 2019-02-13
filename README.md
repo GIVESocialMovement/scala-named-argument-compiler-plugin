@@ -3,7 +3,7 @@ scala-named-argument-compiler-plugin
 
 This compiler plugin enables you to enforce named arguments on on certain methods' invocations.
 
-If you would like to enforce named arguments on *all* method invocations, then it is better to use [scalastyle](http://scalastyle.org).
+If you would like to enforce named arguments on *all* method invocations, then it is better to use [scalastyle](http://www.scalastyle.org).
 
 
 Usage
