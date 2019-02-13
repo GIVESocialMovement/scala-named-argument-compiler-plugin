@@ -14,7 +14,7 @@ organization := "givers.scala"
 
 autoCompilerPlugins := true
 
-addCompilerPlugin("givers.scala.namedargument" %% "scala-named-argument-compiler-plugin" % "0.0.1")
+addCompilerPlugin("givers.scala.namedargument" %% "scala-named-argument-compiler-plugin" % "0.1.1-SNAPSHOT")
 
 mainClass := Some("givers.scala.namedargument.test.Test")
 
