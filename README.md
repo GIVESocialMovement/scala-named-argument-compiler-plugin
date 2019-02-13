@@ -21,9 +21,9 @@ scalacOptions ++= Seq(
 addCompilerPlugin("givers.scala.namedargument" %% "scala-named-argument-compiler-plugin" % "0.1.0")
 ```
 
-Notice that `scalacOptions` points the class `framework.ForceNamedArgument` (You can change this class to your liking).
+Notice that `-P:named-argument:annotation:` (in `scalacOptions`) points the class `framework.ForceNamedArgument` (You can change this class to your liking).
 
-With the `scalacOptions above, please add the below class to your project:
+With the `scalacOptions` above, please add the below class to your project:
 
 ```
 package framework
