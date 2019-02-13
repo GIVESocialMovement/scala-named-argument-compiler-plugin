@@ -66,7 +66,7 @@ class CheckMethodCall(val index: IndexMethodCall, val options: ScalacOptions, va
 
     override def apply(unit: global.CompilationUnit): Unit = {
       import global._
-      for (tree @ Apply(fun, args) <- unit.body if fun.symbol.isInstanceOf[MethodSymbol]) {
+      for (tree @ Apply(fun, _) <- unit.body if fun.symbol.isInstanceOf[MethodSymbol]) {
         val method = fun.symbol.asInstanceOf[MethodSymbol]
 
         if (method.annotations.exists(_.symbol.fullName == options.getAnnotation)) {
