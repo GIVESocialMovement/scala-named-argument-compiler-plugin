@@ -94,7 +94,7 @@ class IndexMethodCall(val global: Global) extends PluginComponent {
       import global._
 
       for (tree @ Apply(_, args) <- unit.body) {
-        if (args.exists(!_.isInstanceOf[AssignOrNamedArg])) {
+        if (args.exists(a => !(a.isInstanceOf[Assign] || a.isInstanceOf[NamedArg]))) {
           nonNamedArgumentCalls.add(Position(tree.pos.source.path, tree.pos.line, tree.pos.column))
         }
       }
