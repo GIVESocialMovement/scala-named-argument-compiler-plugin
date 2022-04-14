@@ -1,13 +1,13 @@
 name := "scala-named-argument-compiler-plugin"
 
-version := "0.1.1-SNAPSHOT"
+version := "0.1.2"
 
-scalaVersion := "2.12.8"
+scalaVersion := "2.13.8"
 
-organization := "givers.scala.namedargument"
+organization := "io.github.givesocialmovement"
 
 libraryDependencies ++= Seq(
-  "org.scala-lang" % "scala-compiler" % "2.12.8" withSources()
+  "org.scala-lang" % "scala-compiler" % "2.13.8" withSources()
 )
 
 publishMavenStyle := true
