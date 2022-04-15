@@ -16,9 +16,14 @@ bintrayOrganization := Some("givers")
 
 bintrayRepository := "maven"
 
-publishArtifact in Test := false
+ThisBuild / sonatypeCredentialHost := "s01.oss.sonatype.org"
+
+Test / publishArtifact := false
 
 pomIncludeRepository := { _ => false }
 
 licenses := Seq(("MIT", url("http://opensource.org/licenses/MIT")))
 
+publishMavenStyle := true
+
+publishTo := sonatypePublishToBundle.value
